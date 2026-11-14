@@ -1,5 +1,7 @@
 # 公开展示版验收记录
 
+首次发布提交 `557d24e6417876259b23e5b0a783d5fcc8755db1` 的 [GitHub Actions](https://github.com/solamn-1042/codebridge-mcp-demo/actions/runs/43572719537) 已完成：Windows/Linux两项任务均成功。
+
 2026-11-14，Windows 11 / Python 3.12.14。真实 stdio MCP、临时 Git/Python 样例仓库，重复20轮，无模型调用。
 
 | 项目 | 实测 |

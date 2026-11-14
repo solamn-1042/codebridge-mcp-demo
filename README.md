@@ -1,5 +1,7 @@
 # CodeBridge
 
+[![verify](https://github.com/solamn-1042/codebridge-mcp-demo/actions/workflows/verify.yml/badge.svg)](https://github.com/solamn-1042/codebridge-mcp-demo/actions/workflows/verify.yml)
+
 独立公开展示版：已有个人项目的工程化整理，包含真实协议评测与 CI。首次安装与量化结果见 [验收记录](docs/VALIDATION.md)。下文 `C:/projects` 是路径示例，请替换为你的实际路径。
 
 DeepSeek Harness 是提供模型会话、Agent Loop 和工具运行环境的宿主；本项目扩展仓库工具及其生命周期管理。

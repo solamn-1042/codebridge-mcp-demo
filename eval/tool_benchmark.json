@@ -1,0 +1,1074 @@
+{
+  "measured_at": "2026-11-14T15:30:25.041486+08:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "rounds": 20,
+  "method": "Real stdio MCP calls against a temporary Git/Python fixture; no model or end-user task evaluation.",
+  "tools": [
+    "change_summary",
+    "git_diff",
+    "read_file",
+    "repo_overview",
+    "run_project_check",
+    "search_code",
+    "tool_metrics"
+  ],
+  "normal_calls": 121,
+  "normal_passed": 121,
+  "denials": {
+    "expected": 20,
+    "passed": 20,
+    "subsequent_read_passed": 20
+  },
+  "schema_errors": {
+    "expected": 20,
+    "passed": 20,
+    "subsequent_read_passed": 20
+  },
+  "latency_including_ipc": {
+    "git_diff": {
+      "calls": 20,
+      "average_ms": 68.66,
+      "p95_ms": 73.48
+    },
+    "read_file": {
+      "calls": 60,
+      "average_ms": 37.08,
+      "p95_ms": 40.79
+    },
+    "repo_overview": {
+      "calls": 20,
+      "average_ms": 69.52,
+      "p95_ms": 74.7
+    },
+    "run_project_check": {
+      "calls": 1,
+      "average_ms": 496.11,
+      "p95_ms": 496.11
+    },
+    "search_code": {
+      "calls": 20,
+      "average_ms": 70.73,
+      "p95_ms": 78.7
+    }
+  },
+  "server_metrics": {
+    "total_calls": 141,
+    "tools": {
+      "repo_overview": {
+        "calls": 20,
+        "successful_calls": 20,
+        "average_ms": 59.66,
+        "p95_ms": 65.01,
+        "error_codes": {}
+      },
+      "search_code": {
+        "calls": 20,
+        "successful_calls": 20,
+        "average_ms": 62.9,
+        "p95_ms": 70.27,
+        "error_codes": {}
+      },
+      "read_file": {
+        "calls": 80,
+        "successful_calls": 60,
+        "average_ms": 22.46,
+        "p95_ms": 32.52,
+        "error_codes": {
+          "PATH_OUTSIDE_ROOT": 20
+        }
+      },
+      "git_diff": {
+        "calls": 20,
+        "successful_calls": 20,
+        "average_ms": 61.06,
+        "p95_ms": 65.31,
+        "error_codes": {}
+      },
+      "run_project_check": {
+        "calls": 1,
+        "successful_calls": 1,
+        "average_ms": 485.22,
+        "p95_ms": 485.22,
+        "error_codes": {}
+      }
+    },
+    "scope": "Local tool executions; schema rejection before execution is not included."
+  },
+  "source_sha256": {
+    "server.py": "2a4ae2bf1de7b38686f343cdf7b72afb84dddc276c4f22197b89be5c126dc04a",
+    "repository_policy.py": "1ee463b62092b2a22e0665537e579a99e8075baa2b2155e9820595e1f849dee6",
+    "execution.py": "6cf784aafdd619faf256af25cf86052b0d9d886c0b79c39172c3ded9ed4b938d",
+    "telemetry.py": "a41376fc2fc43a78a8ae37abe239fa983850e1a0c59ab44152b997eaf55389f2",
+    "plugins/codebridge-manager.ts": "d0ef99ed27d7734d782a753a579ca7312d2a2505715fd42856297ca27d13d144"
+  },
+  "all_assertions_passed": true,
+  "records": [
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 139.19
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 72.66
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 36.66
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 68.8
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 5.79
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 34.96
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.32
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 35.29
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 58.99
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 64.27
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 31.98
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 61.97
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 4.66
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 32.77
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.27
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 32.7
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 57.48
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 61.2
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 35.01
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 60.96
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 4.15
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 33.75
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.29
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 33.66
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 62.96
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 63.45
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 32.74
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 61.59
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 5.28
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 32.33
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.65
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 33.8
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 63.16
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 67.98
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 35.49
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 63.29
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 6.24
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 37.66
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.54
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 37.17
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 63.04
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 66.17
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 33.4
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 66.03
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 4.88
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 34.18
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 2.59
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 36.95
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 61.71
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 62.83
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 34.57
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 68.29
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 5.91
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 34.81
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.8
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 34.32
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 66.19
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 76.16
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 43.87
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 67.72
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 7.08
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 36.43
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 2.17
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 35.93
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 74.7
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 78.03
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 39.22
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 71.65
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 8.65
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 35.28
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 2.57
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 35.62
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 73.11
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 72.7
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 38.67
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 68.82
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 7.31
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 33.53
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.3
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 35.34
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 66.05
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 77.67
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 46.91
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 72.79
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 7.63
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 37.2
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 2.61
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 39.19
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 64.47
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 71.54
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 38.44
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 65.29
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 7.81
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 37.34
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 2.11
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 36.84
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 68.87
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 70.9
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 39.31
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 70.08
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 8.5
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 40.18
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.8
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 38.88
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 69.79
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 78.7
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 40.79
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 72.39
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 10.61
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 34.91
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.78
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 34.54
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 68.35
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 69.74
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 39.95
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 70.55
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 7.67
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 35.92
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.47
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 38.39
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 65.78
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 67.8
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 40.5
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 69.94
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 6.88
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 36.92
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 2.54
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 40.05
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 65.66
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 79.01
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 45.51
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 76.17
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 4.85
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 38.24
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 1.68
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 39.51
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 69.08
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 71.4
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 39.41
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 73.45
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 5.64
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 37.64
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 3.32
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 40.33
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 68.51
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 68.5
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 38.29
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 69.87
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 9.33
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 39.24
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 3.28
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 39.1
+    },
+    {
+      "tool": "repo_overview",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 63.37
+    },
+    {
+      "tool": "search_code",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 73.88
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 37.79
+    },
+    {
+      "tool": "git_diff",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 73.48
+    },
+    {
+      "tool": "read_file",
+      "category": "policy_denial",
+      "passed": true,
+      "latency_ms": 6.55
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 37.37
+    },
+    {
+      "tool": "read_file",
+      "category": "schema_rejection",
+      "passed": true,
+      "latency_ms": 2.27
+    },
+    {
+      "tool": "read_file",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 37.88
+    },
+    {
+      "tool": "run_project_check",
+      "category": "normal",
+      "passed": true,
+      "latency_ms": 496.11
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "codebridge": {
+      "command": "/absolute/path/CodeBridge/.venv/bin/python",
+      "args": [
+        "/absolute/path/CodeBridge/server.py"
+      ],
+      "env": {
+        "CODEBRIDGE_REPO_ROOT": "/absolute/path/your-repository",
+        "CODEBRIDGE_AUDIT_DB": "/absolute/path/CodeBridge/.codebridge/audit.sqlite3"
+      }
+    }
+  }
+}

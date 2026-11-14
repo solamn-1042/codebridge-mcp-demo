@@ -1,0 +1,5 @@
+- insert:
+    - id: mcp-codebridge
+      name: './lib/codebridge-manager.js'
+      config:
+        enabled: true

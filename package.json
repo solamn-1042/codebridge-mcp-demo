@@ -1,0 +1,39 @@
+{
+  "name": "codebridge-cordis-lifecycle",
+  "version": "0.1.1",
+  "description": "CodeBridge repository tools and MCP lifecycle controls for DeepSeek Harness",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24",
+    "dsh": "0.2.0-rc.2 || 0.2.1-alpha.4"
+  },
+  "main": "./lib/codebridge-manager.js",
+  "exports": {
+    ".": "./lib/codebridge-manager.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/", "plugins/", "scripts/", "docs/", "dsh.mcp.patch.yml", "server.py", "repository_policy.py", "execution.py", "telemetry.py", "requirements.txt", "codebridge.mcp.json", "start.cmd"],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./dsh.mcp.patch.yml" }
+  },
+  "scripts": {
+    "build": "node scripts/build-plugin.mjs",
+    "prepack": "npm run build",
+    "prestart": "npm run build",
+    "start": "node scripts/start-dsh.mjs",
+    "pretest:cordis": "npm run build",
+    "test:cordis": "node scripts/test-with-dsh.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4",
+    "@deepseek-ai/dsh-tools": "0.2.0-rc.2 || 0.2.1-alpha.4",
+    "@deepseek-ai/dsh-mcp-client": "0.2.0-rc.2 || 0.2.1-alpha.4"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": { "optional": true },
+    "@deepseek-ai/dsh-tools": { "optional": true },
+    "@deepseek-ai/dsh-mcp-client": { "optional": true }
+  }
+}

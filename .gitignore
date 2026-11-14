@@ -1,0 +1,11 @@
+.venv/
+.tmp/
+.dsh/
+.npm-cache/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+node_modules/
+.codebridge/
+.acl-recovery/
